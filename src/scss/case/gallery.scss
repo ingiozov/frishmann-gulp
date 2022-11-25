@@ -1,0 +1,155 @@
+/* bubbles */
+
+.app__case--acc-gallery-bubbles {
+  height: 622px;
+  width: 100%;
+  padding: 0 40px;
+  margin-bottom: 60px;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+}
+
+/* bubble: 1+1 */
+
+.app__case--acc-gallery-bubble-1 {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+
+.app__case--acc-gallery-bubble-1-bottom {
+  width: 25vw;
+}
+
+.app__case--acc-gallery-bubble-1-top {
+  position: absolute;
+  top: -8.4vw;
+  right: -13vw;
+  width: 17vw;
+}
+
+/* bubble 2 */
+.app__case--acc-gallery-bubble-2 {
+  position: absolute;
+  bottom: 0;
+  left: calc(24.7vw + 40px);
+}
+
+.app__case--acc-gallery-bubble-2 img {
+  width: 16.7vw;
+}
+
+/* bubble 3+1 */
+.app__case--acc-gallery-bubble-3 {
+  position: absolute;
+  bottom: 0;
+  left: calc(41vw + 40px);
+}
+
+.app__case--acc-gallery-bubble-3-bottom {
+  width: 9.7vw;
+}
+
+.app__case--acc-gallery-bubble-3-top {
+  position: absolute;
+  top: -7vw;
+  left: -0.7vw;
+  width: 7.2vw;
+}
+
+/* bubble 4+1 */
+.app__case--acc-gallery-bubble-4 {
+  position: absolute;
+  bottom: 0;
+  left: calc(48.9vw + 40px);
+}
+
+.app__case--acc-gallery-bubble-4-bottom {
+  width: 25.5vw;
+  cursor: pointer;
+}
+
+.app__case--acc-gallery-bubble-4-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font-size: 30px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+}
+
+.app__case--acc-gallery-bubble-4-top {
+  position: absolute;
+  top: -5.5vw;
+  left: -11vw;
+  width: 14.4vw;
+}
+
+/* bubble 5+1 */
+.app__case--acc-gallery-bubble-5 {
+  position: absolute;
+  bottom: 0;
+  left: calc(74vw + 40px);
+}
+
+.app__case--acc-gallery-bubble-5-bottom {
+  width: 17.4vw;
+}
+
+.app__case--acc-gallery-bubble-5-top {
+  position: absolute;
+  top: -8.2vw;
+  left: -1.65vw;
+  width: 9.4vw;
+}
+
+/* end bubbles */
+
+/* gallery buttons */
+
+.app__case--acc-gallery-buttons {
+  margin: 0 40px 180px;
+  border-top: 1px solid var(--black);
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+}
+
+.gallery__btn--prev {
+  justify-self: flex-start;
+}
+
+.gallery__btn--prev h2 {
+  margin-top: 40px;
+  margin-bottom: 130px;
+}
+
+.gallery__btn--next {
+  justify-self: flex-end;
+}
+
+.gallery__btn--next h2 {
+  margin-top: 40px;
+  margin-bottom: 130px;
+  text-align: end;
+}
+
+.vertical-line {
+  width: 1px;
+  background: var(--black);
+}
+
+.gallery__btn--button {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.gallery__btn--prev .gallery__btn--button img {
+  transform: rotate(180deg);
+}

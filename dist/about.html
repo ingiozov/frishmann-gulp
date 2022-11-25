@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>About</title>
+</head>
+
+  <body>
+    <header id="main" class="app__header section">
+  <div class="app__header--heading">
+    <h1>агентство ритейл-дизайна Frishmann</h1>
+    <h1>пространства, которые понимают людей и понятны людям</h1>
+    <h1>магазины / рестораны / офисы</h1>
+  </div>
+
+  <div class="app__header--img">
+    <picture>
+      <source media="(min-width:2300px)" srcset="./img/logo-2560.png" />
+      <source media="(min-width:1920px)" srcset="./img/logo-1920.png" />
+      <source media="(max-width:1440px)" srcset="./img/header-img.png" />
+      <img src="./img/logo-1920.png" alt="logo" style="width: auto" />
+    </picture>
+  </div>
+</header>
+
+    <main></main>
+    <footer id="footer" class="app__contacts--footer">
+  <div class="footer__heading">
+    <h2 class="open-btn">связаться с Frishmann</h2>
+  </div>
+
+  <div class="footer__modal">
+    <div class="footer__form">
+      <div class="footer__form--header">
+        <h2>связаться с Frishmann</h2>
+        <button class="close-btn"><p>закрыть</p></button>
+      </div>
+
+      <form action="" class="footer__form--form">
+        <div class="footer__form--grid">
+          <div class="footer__form--input">
+            <textarea
+              type="text"
+              id="name"
+              name="name"
+              placeholder="ваше имя"
+            ></textarea>
+          </div>
+          <div class="footer__form--input">
+            <textarea
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e-mail"
+            ></textarea>
+          </div>
+          <div class="footer__form--input">
+            <textarea
+              type="tel"
+              id="tel"
+              name="tel"
+              placeholder="телефон"
+            ></textarea>
+          </div>
+          <div class="footer__form--input">
+            <textarea
+              maxlength="300"
+              type="text"
+              id="message"
+              name="message"
+              placeholder="сообщение"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="footer__form--cta">
+          <div class="footer__services--cta">
+            <button><p>выбрать услугу</p></button>
+          </div>
+
+          <button type="submit"><h2>отправить</h2></button>
+        </div>
+
+        <div class="footer__form--services"></div>
+      </form>
+    </div>
+
+    <div class="footer__services">
+      <div class="footer__services--analysis">
+        <div class="footer__services--block">
+          <h3>анализ</h3>
+          <div class="services__analysis--item">
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              id="explore"
+              name="исследование рынка"
+            />
+            <label for="explore"
+              ><p class="services__analysis--item-p">
+                исследование рынка
+              </p></label
+            >
+          </div>
+          <div class="services__analysis--item">
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              id="analysis"
+              name="анализ конкурентов"
+            />
+            <label for="analysis"
+              ><p class="services__analysis--item-p">
+                анализ конкурентов
+              </p></label
+            >
+          </div>
+          <div class="services__analysis--item">
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              id="estimate"
+              name="оценка решений"
+            />
+            <label for="estimate"
+              ><p class="services__analysis--item-p">оценка решений</p></label
+            >
+          </div>
+        </div>
+        <div class="footer__services--block">
+          <h3>разработка</h3>
+          <div class="services__analysis--item">
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              id="develop"
+              name="разработка концепта"
+            />
+            <label for="develop"
+              ><p class="services__analysis--item-p">
+                разработка концепта
+              </p></label
+            >
+          </div>
+          <div class="services__analysis--item">
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              id="sketch"
+              name="эскизный проект"
+            />
+            <label for="sketch"
+              ><p class="services__analysis--item-p">эскизный проект</p></label
+            >
+          </div>
+          <div class="services__analysis--item">
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              id="docs"
+              name="руководство и документация"
+            />
+            <label for="docs"
+              ><p class="services__analysis--item-p">
+                руководство и документация
+              </p></label
+            >
+          </div>
+        </div>
+        <div class="footer__services--block">
+          <h3>реализация</h3>
+          <div class="services__analysis--item">
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              id="search"
+              name="поиск подрядчиков"
+            />
+            <label for="search"
+              ><p class="services__analysis--item-p">
+                поиск подрядчиков
+              </p></label
+            >
+          </div>
+          <div class="services__analysis--item">
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              id="plan"
+              name="план работ"
+            />
+            <label for="plan"
+              ><p class="services__analysis--item-p">план работ</p></label
+            >
+          </div>
+          <div class="services__analysis--item">
+            <input
+              class="custom-checkbox"
+              type="checkbox"
+              id="monitor"
+              name="авторский надзор"
+            />
+            <label for="monitor"
+              ><p class="services__analysis--item-p">авторский надзор</p></label
+            >
+          </div>
+        </div>
+
+        <div class="footer__services--btns">
+          <div class="footer__services--close">
+            <button><p>закрыть</p></button>
+          </div>
+          <div class="footer__services--choose">
+            <button class="footer__services--choose-btn">
+              <p>выбрать</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

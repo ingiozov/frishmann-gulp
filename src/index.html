@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Главная" })
+  <body>
+    <main>
+      <div class="app">
+        <!-- <div class="hole"></div> -->
+        <div class="custom-cursor"></div>
+        <div class="app__main">
+          <!-- navbar -->
+          @@include('html/navbar.html')
+          <!-- end navbar -->
+
+          <div class="app__main--wrapper app__container">
+            <!-- header -->
+
+            <div class="app__main--logo">
+              <img src="./img/logo.svg" alt="logo" />
+            </div>
+
+            @@include('html/header.html', {})
+
+            <!-- jobs -->
+            @@include('html/jobs.html', {})
+
+            <!-- services -->
+            @@include('html/services.html', {})
+
+            <!-- company -->
+            @@include('html/company.html', {})
+
+            <!-- contacts -->
+            @@include('html/contacts.html', {})
+          </div>
+
+          <!-- footer -->
+          @@include('html/contacts.html', {})
+        </div>
+      </div>
+
+      <!-- <script src="/js/vendors/gsap/gsap.min.js"></script> -->
+    </main>
+    @@include('html/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

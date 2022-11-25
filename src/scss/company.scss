@@ -1,0 +1,149 @@
+.app__company {
+  margin-bottom: 136px;
+}
+
+.app__company--header {
+  padding-right: 21%;
+}
+
+.app__company--stats {
+  margin-top: 126px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.company__stats--text h3 {
+  margin-bottom: 38px;
+}
+
+.company__stats--text h3:last-of-type {
+  margin-top: 79px;
+}
+
+.app__company--stats p {
+  max-width: 320px;
+}
+
+.company__stats--cards {
+  grid-column: 3 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 180px;
+  /* gap: 40px; */
+}
+
+.stats__cards--card {
+  /* margin-bottom: 31px; */
+}
+
+.stats__card--header {
+  margin-bottom: 6px;
+}
+
+.stats__cards--card h3 {
+  text-align: left;
+}
+
+.app__company--team {
+  margin-top: 112px;
+  margin-right: 40px;
+  padding-left: 10%;
+}
+
+.app__team--wrapper {
+  grid-column: 2 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-bottom: 41px;
+}
+
+.app__team--item {
+  width: 360px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  margin-right: -40px;
+  margin-bottom: -41px;
+  padding: 0 40px;
+  position: relative;
+}
+
+.app__team--item:hover .team__item--image {
+  opacity: 1;
+}
+
+.team__item--image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.app__item--text {
+  text-align: center;
+}
+
+.app__team--article {
+  margin-top: 112px;
+  margin-bottom: 80px;
+  padding-right: 22%;
+}
+
+.app__company--vacancies {
+  /* padding-bottom: 137px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.app__vacancies__header {
+  padding-bottom: 26px;
+  grid-column: 1 / -1;
+  border-bottom: 1px solid var(--gray);
+}
+
+.app__vacancies--acc {
+  margin-bottom: 40px;
+  grid-column: 2 / -1;
+}
+
+.vacancies__acc--item {
+  padding-top: 30px;
+  padding-bottom: 67px;
+}
+
+.vacancies__acc--item:not(:last-child) {
+  border-bottom: 1px solid var(--gray);
+}
+
+.vacancies__item--header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.vacancies__item--header::after {
+  content: '';
+  background: url('../img/arrow.svg');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.app__vacancies--article {
+  grid-column: 2 / -1;
+  padding-right: 28%;
+}

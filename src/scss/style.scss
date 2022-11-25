@@ -1,0 +1,187 @@
+@import './fonts.scss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  font-family: 'GraphikLCG';
+}
+
+:root {
+  --black: #121212;
+  --white: #fff;
+  --gray: #cccccc;
+  --gray-light: #ebebeb;
+  --gray-dark: #787d85;
+  --primary: #7653fc;
+  --primary-hover: #5f3ceb;
+  --red: #fc836d;
+  --green: #1dc37e;
+  --green-light: #c8f8e4;
+
+  --transition: all 0.3s ease-in-out;
+
+  --app-padding: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /* cursor: pointer; */
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: var(--black);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: lower-alpha;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  /* text-align: center; */
+  letter-spacing: 0.01em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.list-item {
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: -0.03em;
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  color: var(--black);
+  opacity: 0.7;
+}
+
+.caption-full {
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  color: var(--black);
+  opacity: 1;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+}
+
+.app__container {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spheres-margin {
+  margin-bottom: 1000px;
+}
+
+.app__main--wrapper {
+  padding-top: 108px;
+}
+
+.app__main--logo {
+  position: fixed;
+  right: 40px;
+  z-index: 10;
+}
+
+@import './cursor.scss';
+@import './header.scss';
+@import './navbar.scss';
+@import './jobs.scss';
+@import './services.scss';
+@import './company.scss';
+@import './contacts.scss';
+@import './footer.scss';
+
+// case page
+@import './case/case.scss';
+
+// acc client
+@import './case/client.scss';
+
+// acc about
+@import './case/about.scss';
+
+// acc jobs
+@import './case/jobs.scss';
+
+// acc results
+@import './case/results.scss';
+
+// acc gallery
+@import './case/gallery.scss';
+@import './case/slider.scss';
+
+///////////////
+// 404 page
+@import './404/404.scss';

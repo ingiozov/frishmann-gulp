@@ -1,0 +1,74 @@
+/* experimental */
+
+.app__case--acc {
+  /* margin-top: 60px; */
+  /* min-height: 100vh; */
+  position: relative;
+}
+
+.app__case--acc .app__main--logo {
+  top: 40px;
+}
+
+.acc__header {
+  position: absolute;
+  top: 0px;
+  height: 30px;
+  width: 100%;
+  background-color: var(--white);
+  padding: 0px 40px;
+  /* z-index: 10000; */
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: -0.03em;
+}
+
+#pin1,
+#pin2,
+#pin3,
+#pin4,
+#pin5 {
+  position: absolute;
+  width: 100%;
+}
+
+.app__case--acc-item:not(:first-of-type) {
+  border-top: 1px solid #969799;
+}
+
+.app__case--acc-item {
+  background: var(--white);
+}
+
+.app-acc__acc-item--about {
+  /* height: 1100px; */
+}
+
+.app-case__acc-item--jobs {
+  /* background: var(--white); */
+  /* max-height: 100vh; */
+  /* overflow-y: scroll; */
+}
+
+.app-case__acc-item--results {
+  /* background: var(--white); */
+}
+
+.app-case__acc-item--gallery {
+  /* background: var(--white); */
+}
+
+.app__case--acc-heading {
+  background: var(--white);
+  user-select: none;
+  padding-left: 40px;
+  /* cursor: pointer; */
+}
+
+.app__case--acc-body {
+  /* opacity: 0;
+  max-height: 0; */
+  /* overflow: hidden; */
+  /* overflow-y: scroll; */
+  /* transition: var(--transition); */
+}

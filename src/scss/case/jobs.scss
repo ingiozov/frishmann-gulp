@@ -1,0 +1,273 @@
+.app__case--acc-jobs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 40px; */
+}
+
+.app__case--acc-nav {
+  grid-column: 1 / 2;
+  margin-top: 60px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__case--acc-header {
+  grid-column: 2 / 4;
+  margin-top: 60px;
+  padding: 0 40px 0 0;
+}
+
+.app__case--acc-header h1 {
+  margin-bottom: 65px;
+}
+
+.app__case--acc-header h2 {
+  margin-bottom: 35px;
+}
+
+.app__case--acc-aside {
+  grid-column: 4 / 5;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.app__case--acc-aside .aside-img {
+  margin-bottom: 12px;
+}
+
+.app__case--acc-aside .caption {
+  max-width: 186px;
+}
+
+.app__case--acc-aside .caption:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.app__case--acc-aside .caption-full {
+  margin-bottom: 5px;
+}
+
+/* acc -> gallery-top */
+
+.app__case--acc-gallery-top {
+  margin-top: 120px;
+  margin-bottom: 150px;
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.acc-gallery-top-left {
+  grid-column: 1 / 2;
+}
+
+.acc-gallery-top-left-img img {
+  width: 100%;
+}
+
+.acc-gallery-top-right {
+  grid-column: 2 / -1;
+  padding-right: 40px;
+}
+
+.acc-gallery-top-right-img img {
+  width: 100%;
+}
+
+.app__case--acc-gallery-top .caption {
+  margin-top: 12px;
+}
+
+/* end acc -> gallery-top */
+
+/* acc -> article */
+
+.app__case--acc-article {
+  grid-column: 2 / 4;
+  margin-bottom: 146px;
+}
+
+.app__case--acc-article li {
+  list-style: inside;
+  list-style-type: decimal;
+}
+
+.app__case--acc-article-text {
+  margin-bottom: 65px;
+}
+
+.considered p {
+  margin-bottom: 47px;
+}
+
+.considered .caption {
+  margin-bottom: 15px;
+}
+
+/* end acc -> article */
+
+/* acc -> article (ul) */
+
+.app__case--acc-article-ul {
+  grid-column: 2 / 4;
+  margin-bottom: 150px;
+}
+
+.app__case--acc-article-ul h3 {
+  margin-bottom: 25px;
+}
+
+.app__case--acc-article-ul li {
+  list-style: inside;
+  list-style-type: disc;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+  font-size: 16px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  margin-bottom: 15px;
+}
+
+/* end acc -> article (ul) */
+
+/* gallery no captions */
+
+.app__case--acc-gallery-no-caption {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 180px;
+}
+
+.app__case--acc-gallery-no-caption img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__img--big {
+  grid-column: 1 / -1;
+}
+
+/* end gallery no captions */
+
+/* gallery with captions */
+
+.app__case--acc-gallery-caption {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 180px;
+}
+
+.app__case--acc-img-caption {
+  /* max-height: 261px; */
+}
+
+.app__case--acc-img-caption-img {
+  width: 100%;
+  height: 19vw;
+}
+
+.app__case--acc-img-caption img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* min-height: 261px; */
+}
+
+.gallery__img--big {
+  height: 25vw;
+}
+
+.gallery__img--big img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app__case--acc-gallery-caption .caption {
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .app__case--acc-gallery-caption {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app__case--acc-gallery-caption {
+    /* grid-template-columns: 1fr; */
+  }
+}
+
+/* end gallery with captions */
+
+/* gallery wide */
+
+.app__case--acc-gallery-wide {
+  grid-column: 2 / 5;
+  margin-bottom: 181px;
+}
+
+.gallery-out-of-grid {
+  display: grid;
+  grid-template-columns: 2.5fr 0.5fr;
+  margin-bottom: 64px;
+}
+
+.gallery-out-of-grid-top {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.gallery-out-of-grid-top-reverse {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.app__case--gallery-wide-img-caption {
+  padding-right: 20px;
+}
+
+.app__case--gallery-wide-img-caption img {
+  height: 19vw;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.app__case--acc-img-off-grid {
+  padding-right: 20px;
+}
+
+.app__case--acc-img-off-grid img {
+  width: 100%;
+  height: 25vw;
+}
+
+.gallery-in-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-in-grid .gallery__img--small {
+  width: 100%;
+  padding-right: 20px;
+}
+
+.gallery-in-grid .gallery__img--small img {
+  width: 100%;
+  height: 19vw;
+  object-fit: cover;
+}
+
+/* end gallery wide */

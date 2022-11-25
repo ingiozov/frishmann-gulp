@@ -1,0 +1,22 @@
+.app__case--acc-about {
+  padding: 0 40px;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* width: 100%; */
+  /* background: var(--white); */
+  /* height: 1073px; */
+  /* max-height: 600px; */
+  /* overflow-y: scroll; */
+}
+
+.app__case--acc-about h2 {
+  margin-top: 60px;
+  margin-bottom: 140px;
+  max-width: 75%;
+}
+
+.app__case--acc-img {
+  margin-bottom: 60px;
+  display: grid;
+  place-items: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Case" })
+  <body>
+    @@include('html/navbar.html', {})
+    <main>
+      <div class="app__case">
+        <div class="custom-cursor"></div>
+        <!-- navbar -->
+        @@include('html/navbar.html')
+        <!-- end navbar -->
+
+        <!-- ACC -->
+        <div class="app__case--acc">
+          <div class="app__main--logo">
+            <img src="./img/logo.svg" alt="logo" />
+          </div>
+
+          <div class="acc__header">клиент</div>
+
+          <!-- client -->
+          @@include('html/case/caseClient.html')
+          <!-- end client -->
+
+          <!-- about -->
+          @@include('html/case/about.html')
+          <!-- end about -->
+
+          <!-- jobs -->
+          @@include('html/case/jobs.html')
+          <!-- end jobs -->
+
+          <!-- results -->
+          @@include('html/case/results.html')
+          <!-- end results -->
+
+          <!-- gallery -->
+          @@include('html/case/gallery.html')
+          <!-- end gallery -->
+        </div>
+        <!-- end ACC -->
+
+        <!-- slider -->
+        @@include('html/case/slider.html')
+        <!-- end slider -->
+      </div>
+    </main>
+    @@include('html/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
