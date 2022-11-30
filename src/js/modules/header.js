@@ -115,12 +115,18 @@ export const headerImg = () => {
   hoverSection1.addEventListener('mouseover', (e) => {
     let direction = directions[getDirectionKey(e, hoverSection1)]
     if (direction === 'right') {
-      gsap.to(imgSideFront, { rotateY: 0, rotateX: 0, duration: 3 })
-      gsap.to(imgSideBack, { rotateY: -180, rotateX: 0, duration: 3 })
+      gsap.to(imgSideFront, { rotateY: 0, rotateX: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateY: -180, rotateX: 0, duration: 0.3 })
     }
     if (direction === 'bottom') {
-      gsap.set(imgSideFront, { rotateY: 0, rotateX: 0 })
-      gsap.set(imgSideBack, { rotateY: -180, rotateX: 0 })
+      gsap.to(imgSideFront, { rotateX: 0, rotateY: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateX: 180, rotateY: 0, duration: 0.3 })
+
+      // gsap.to(imgSideFront, { rotateX: 0, rotateY: 0, duration: 0.3 })
+      // gsap.to(imgSideBack, { rotateX: 180, rotateY: 0, duration: 0.3 })
+
+      // gsap.set(imgSideFront, { rotateY: 0 })
+      // gsap.set(imgSideBack, { rotateY: -180 })
     }
   })
   hoverSection1.addEventListener('mouseout', (e) => {
@@ -133,6 +139,7 @@ export const headerImg = () => {
       imgSideBack.style.backgroundImage = `url('../img/bubble_5.png')`
     }
     if (direction === 'right') {
+      imgSideBack.style.backgroundImage = `url('../img/bubble_1.png')`
       gsap.set(imgSideBack, { rotateY: -180 })
       gsap.set(imgSideBack, { rotateX: 0 })
     }
@@ -143,12 +150,22 @@ export const headerImg = () => {
     let direction = directions[getDirectionKey(e, hoverSection2)]
     if (direction === 'left') {
       // gsap.set(imgSideBack, { rotateX: 0 })
-      gsap.to(imgSideFront, { rotateY: 180, duration: 3 })
-      gsap.to(imgSideBack, { rotateY: 0, duration: 3 })
+      gsap.to(imgSideFront, { rotateY: 180, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateY: 0, duration: 0.3 })
     }
     if (direction === 'right') {
-      gsap.to(imgSideFront, { rotateY: 180, rotateX: 0, duration: 3 })
-      gsap.to(imgSideBack, { rotateY: 0, rotateX: 0, duration: 3 })
+      gsap.to(imgSideFront, { rotateY: 180, rotateX: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateY: 0, rotateX: 0, duration: 0.3 })
+    }
+    if (direction === 'bottom') {
+      gsap.to(imgSideFront, { rotateX: 180, rotateY: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateX: 0, rotateY: 0, duration: 0.3 })
+      gsap.to(imgSideFront, {
+        rotateX: 0,
+        rotateY: 180,
+        duration: 0,
+        delay: 0.3,
+      })
     }
   })
   hoverSection2.addEventListener('mouseout', (e) => {
@@ -159,14 +176,31 @@ export const headerImg = () => {
     if (direction === 'left') {
       imgSideFront.style.backgroundImage = `url('../img/header-img.png')`
     }
+    if (direction === 'bottom') {
+      gsap.set(imgSideFront, { rotateX: 180, rotateY: 0, duration: 0 })
+    }
   })
 
   // hover section 3
   hoverSection3.addEventListener('mouseover', (e) => {
     let direction = directions[getDirectionKey(e, hoverSection3)]
     if (direction === 'left') {
-      gsap.to(imgSideFront, { rotateY: 360, duration: 3 })
-      gsap.to(imgSideBack, { rotateY: 180, duration: 3 })
+      gsap.to(imgSideFront, { rotateY: 360, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateY: 180, duration: 0.3 })
+    }
+    if (direction === 'right') {
+      gsap.to(imgSideFront, { rotateY: 360, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateY: 180, duration: 0.3 })
+    }
+    if (direction === 'bottom') {
+      gsap.to(imgSideFront, { rotateY: 360, rotateX: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateY: 360, rotateX: 180, duration: 0.3 })
+      gsap.to(imgSideBack, {
+        rotateY: 180,
+        rotateX: 0,
+        duration: 0,
+        delay: 0.3,
+      })
     }
   })
   hoverSection3.addEventListener('mouseout', (e) => {
@@ -177,21 +211,34 @@ export const headerImg = () => {
     if (direction === 'left') {
       imgSideBack.style.backgroundImage = `url('../img/bubble_1.png')`
     }
+    if (direction === 'bottom') {
+      imgSideBack.style.backgroundImage = `url('../img/bubble_8.png')`
+      // gsap.set(imgSideFront, { rotateY: 360, rotateX: 180 })
+      gsap.set(imgSideBack, { rotateY: 360, rotateX: 180 })
+    }
   })
 
   // hover section 4
   hoverSection4.addEventListener('mouseover', (e) => {
     let direction = directions[getDirectionKey(e, hoverSection4)]
     if (direction === 'left') {
-      gsap.to(imgSideFront, { rotateY: 540, duration: 3 })
-      gsap.to(imgSideBack, { rotateY: 360, duration: 3 })
+      gsap.to(imgSideFront, { rotateY: 540, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateY: 360, duration: 0.3 })
+    }
+    if (direction === 'bottom') {
+      gsap.to(imgSideFront, { rotateY: 360, rotateX: 180, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateY: 360, rotateX: 0, duration: 0.3 })
+      gsap.set(imgSideFront, { rotateY: 540, rotateX: 0, delay: 0.3 })
     }
   })
   hoverSection4.addEventListener('mouseout', (e) => {
     let direction = directions[getDirectionKey(e, hoverSection4)]
     if (direction === 'left') {
-      gsap.to(imgSideFront, { rotateY: 360, duration: 3 })
-      gsap.to(imgSideBack, { rotateY: 180, duration: 3 })
+      imgSideFront.style.backgroundImage = `url('../img/bubble_2.png')`
+    }
+    if (direction === 'bottom') {
+      imgSideFront.style.backgroundImage = `url('../img/bubble_9.png')`
+      gsap.set(imgSideFront, { rotateY: 360, rotateX: 180 })
     }
   })
 
@@ -199,21 +246,117 @@ export const headerImg = () => {
   hoverSection5.addEventListener('mouseover', (e) => {
     let direction = directions[getDirectionKey(e, hoverSection5)]
     if (direction === 'top') {
-      gsap.to(imgSideFront, { rotateX: -180, rotateY: 0, duration: 3 })
-      gsap.to(imgSideBack, { rotateX: 0, rotateY: 0, duration: 3 })
+      gsap.to(imgSideFront, { rotateX: -180, rotateY: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateX: 0, rotateY: 0, duration: 0.3 })
+    }
+    if (direction === 'right') {
+      gsap.to(imgSideFront, { rotateY: -180, rotateX: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateY: 0, rotateX: 0, duration: 0.3 })
+      gsap.set(imgSideFront, { rotateX: -180, rotateY: 0, delay: 0.3 })
     }
   })
   hoverSection5.addEventListener('mouseout', (e) => {
     let direction = directions[getDirectionKey(e, hoverSection5)]
     if (direction === 'top') {
-      gsap.to(imgSideFront, { rotateX: 0, rotateY: 0, duration: 3 })
-      gsap.to(imgSideBack, { rotateX: 180, rotateY: 0, duration: 3 })
+      // gsap.to(imgSideFront, { rotateX: 0, rotateY: 0, duration: 0.3 })
+      // gsap.to(imgSideBack, { rotateX: 180, rotateY: 0, duration: 0.3 })
+    }
+    if (direction === 'right') {
+      imgSideFront.style.backgroundImage = `url('../img/bubble_7.png')`
+      gsap.set(imgSideFront, { rotateX: 0, rotateY: -180 })
     }
   })
 
   // hover section 6
+  hoverSection6.addEventListener('mouseover', (e) => {
+    let direction = directions[getDirectionKey(e, hoverSection6)]
+    if (direction === 'left') {
+      gsap.to(imgSideFront, { rotateY: 0, rotateX: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateY: 180, duration: 0.3 })
+    }
+    if (direction === 'top') {
+      gsap.to(imgSideFront, { rotateY: 0, rotateX: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateX: -180, rotateY: 0, duration: 0.3 })
+    }
+    if (direction === 'right') {
+      gsap.to(imgSideFront, { rotateX: 0, rotateY: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateX: 0, rotateY: 180, duration: 0.3 })
+    }
+  })
+  hoverSection6.addEventListener('mouseout', (e) => {
+    let direction = directions[getDirectionKey(e, hoverSection6)]
+    if (direction === 'top') {
+      gsap.set(imgSideBack, {
+        rotateY: 0,
+        rotateX: -180,
+        duration: 0,
+      })
+      imgSideBack.style.backgroundImage = `url('../img/bubble_1.png')`
+    }
+    if (direction === 'right') {
+      imgSideBack.style.backgroundImage = `url('../img/bubble_8.png')`
+      gsap.set(imgSideBack, { rotateX: 0, rotateY: 180, duration: 0 })
+    }
+    if (direction === 'left') {
+      imgSideBack.style.backgroundImage = `url('../img/bubble_5.png')`
+      gsap.set(imgSideBack, { rotateX: 0, rotateY: 180, duration: 0 })
+    }
+  })
+
   // hover section 7
+  hoverSection7.addEventListener('mouseover', (e) => {
+    let direction = directions[getDirectionKey(e, hoverSection7)]
+    if (direction === 'left') {
+      gsap.to(imgSideFront, { rotateX: 0, rotateY: 180, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateX: 0, rotateY: 360, duration: 0.3 })
+    }
+    if (direction === 'right') {
+      gsap.to(imgSideFront, { rotateX: 0, rotateY: 180, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateX: 0, rotateY: 360, duration: 0.3 })
+    }
+    if (direction === 'top') {
+      gsap.to(imgSideFront, { rotateX: -180, rotateY: 360, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateX: 0, rotateY: 360, duration: 0.3 })
+      gsap.set(imgSideFront, { rotateX: 0, rotateY: 180, delay: 0.3 })
+    }
+  })
+  hoverSection7.addEventListener('mouseout', (e) => {
+    let direction = directions[getDirectionKey(e, hoverSection7)]
+    if (direction === 'top') {
+      imgSideFront.style.backgroundImage = `url('../img/bubble_2.png')`
+      gsap.set(imgSideFront, { rotateX: -180, rotateY: 360 })
+    }
+    if (direction === 'left') {
+      imgSideFront.style.backgroundImage = `url('../img/bubble_7.png')`
+    }
+    if (direction === 'right') {
+      imgSideFront.style.backgroundImage = `url('../img/bubble_9.png')`
+    }
+  })
+
   // hover section 8
+  hoverSection8.addEventListener('mouseover', (e) => {
+    let direction = directions[getDirectionKey(e, hoverSection8)]
+    if (direction === 'left') {
+      gsap.to(imgSideFront, { rotateX: 0, rotateY: 360, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateX: 0, rotateY: 540, duration: 0.3 })
+    }
+    if (direction === 'top') {
+      gsap.to(imgSideFront, { rotateX: 0, duration: 0.3 })
+      gsap.to(imgSideBack, { rotateX: -180, duration: 0.3 })
+      gsap.set(imgSideBack, { rotateY: 540, rotateX: 0, delay: 0.3 })
+    }
+  })
+  hoverSection8.addEventListener('mouseout', (e) => {
+    let direction = directions[getDirectionKey(e, hoverSection8)]
+    if (direction === 'top') {
+      imgSideBack.style.backgroundImage = `url('../img/bubble_3.png')`
+      gsap.set(imgSideBack, { rotateX: -180, rotateY: 360 })
+    }
+
+    if (direction === 'left') {
+    }
+  })
 
   /////////////////////////////////
   /////////////////////////////////

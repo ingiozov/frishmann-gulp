@@ -18,7 +18,7 @@
 }
 
 .app__header--img {
-  perspective: 500px;
+  perspective: 400px;
   position: fixed;
   top: 0;
   left: 0;
@@ -90,10 +90,5 @@
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-
-  div {
-    // height: 100%;
-    border: 1px solid var(--gray);
-  }
+  // gap: 40px;
 }
