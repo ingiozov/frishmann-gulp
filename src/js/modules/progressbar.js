@@ -17,7 +17,6 @@ export const progressBar = () => {
     width: '100%',
     ease: 'none',
     scrollTrigger: {
-      markers: true,
       trigger: jobsSection,
       // start: 'top top',
       start: 'top bottom',
@@ -30,7 +29,6 @@ export const progressBar = () => {
     width: '100%',
     ease: 'none',
     scrollTrigger: {
-      markers: true,
       trigger: servicesSection,
       // start: 'top top',
       start: 'top bottom',
@@ -43,7 +41,6 @@ export const progressBar = () => {
     width: '100%',
     ease: 'none',
     scrollTrigger: {
-      markers: true,
       trigger: companySection,
       // start: 'top top',
       start: 'top bottom',
@@ -56,7 +53,6 @@ export const progressBar = () => {
     width: '100%',
     ease: 'none',
     scrollTrigger: {
-      markers: true,
       trigger: contactsSection,
       start: 'top bottom',
       end: 'bottom bottom',
