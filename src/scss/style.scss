@@ -154,6 +154,7 @@ p {
   z-index: 10;
 }
 
+// home page
 @import './cursor.scss';
 @import './header.scss';
 @import './navbar.scss';
@@ -163,6 +164,7 @@ p {
 @import './contacts.scss';
 @import './footer.scss';
 
+////////////////////////////
 // case page
 @import './case/case.scss';
 
@@ -182,6 +184,6 @@ p {
 @import './case/gallery.scss';
 @import './case/slider.scss';
 
-///////////////
+///////////////////////////
 // 404 page
 @import './404/404.scss';
