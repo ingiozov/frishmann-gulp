@@ -18,6 +18,7 @@ body {
   padding: 0;
   color: var(--black);
   font-family: "GraphikLCG";
+  text-transform: lowercase;
 }
 
 :root {
@@ -643,9 +644,10 @@ p {
   z-index: 1;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  clip-path: circle(50% at 50% 50%);
 }
 
-.app__item--text {
+.team__item--text {
   text-align: center;
 }
 
@@ -675,6 +677,7 @@ p {
 .vacancies__acc--item {
   padding-top: 30px;
   padding-bottom: 67px;
+  cursor: pointer;
 }
 
 .vacancies__acc--item:not(:last-child) {
@@ -688,6 +691,10 @@ p {
   position: relative;
 }
 
+.vacancies__acc--item.open .vacancies__item--header::after {
+  transform: rotate(90deg);
+}
+
 .vacancies__item--header::after {
   content: "";
   background: url("../img/arrow.svg");
@@ -697,11 +704,27 @@ p {
   right: 0;
   width: 28px;
   height: 28px;
+  transition: all 0.3s cubic-bezier(0.68, 1.92, 0.63, 0.65);
 }
 
 .app__vacancies--article {
   grid-column: 2/-1;
   padding-right: 28%;
+}
+
+.vacancies__item--body {
+  padding-top: 36px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.34, 0.91, 0.53, 0.99);
+}
+.vacancies__item--body p:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.vacancies__acc--item.open .vacancies__item--body {
+  height: auto;
 }
 
 .app__contacts--wrapper {

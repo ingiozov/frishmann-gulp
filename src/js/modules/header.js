@@ -177,6 +177,7 @@ export const headerImg = () => {
       imgSideFront.style.backgroundImage = `url('../img/header-img.png')`
     }
     if (direction === 'bottom') {
+      imgSideFront.style.backgroundImage = `url('../img/bubble_7.png')`
       gsap.set(imgSideFront, { rotateX: 180, rotateY: 0, duration: 0 })
     }
   })
@@ -258,8 +259,7 @@ export const headerImg = () => {
   hoverSection5.addEventListener('mouseout', (e) => {
     let direction = directions[getDirectionKey(e, hoverSection5)]
     if (direction === 'top') {
-      // gsap.to(imgSideFront, { rotateX: 0, rotateY: 0, duration: 0.3 })
-      // gsap.to(imgSideBack, { rotateX: 180, rotateY: 0, duration: 0.3 })
+      imgSideFront.style.backgroundImage = `url('../img/header-img.png')`
     }
     if (direction === 'right') {
       imgSideFront.style.backgroundImage = `url('../img/bubble_7.png')`

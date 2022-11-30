@@ -87,9 +87,10 @@
   z-index: 1;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  clip-path: circle(50% at 50% 50%);
 }
 
-.app__item--text {
+.team__item--text {
   text-align: center;
 }
 
@@ -111,6 +112,8 @@
   border-bottom: 1px solid var(--gray);
 }
 
+// vacancies accordion
+
 .app__vacancies--acc {
   margin-bottom: 40px;
   grid-column: 2 / -1;
@@ -119,6 +122,7 @@
 .vacancies__acc--item {
   padding-top: 30px;
   padding-bottom: 67px;
+  cursor: pointer;
 }
 
 .vacancies__acc--item:not(:last-child) {
@@ -132,6 +136,10 @@
   position: relative;
 }
 
+.vacancies__acc--item.open .vacancies__item--header::after {
+  transform: rotate(90deg);
+}
+
 .vacancies__item--header::after {
   content: '';
   background: url('../img/arrow.svg');
@@ -141,9 +149,28 @@
   right: 0;
   width: 28px;
   height: 28px;
+  transition: $transition-bounce;
 }
 
 .app__vacancies--article {
   grid-column: 2 / -1;
   padding-right: 28%;
+}
+
+.vacancies__item--body {
+  padding-top: 36px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: $transition;
+
+  p:not(:last-child) {
+    margin-bottom: 21px;
+  }
+}
+
+.vacancies__acc--item.open {
+  .vacancies__item--body {
+    height: auto;
+  }
 }

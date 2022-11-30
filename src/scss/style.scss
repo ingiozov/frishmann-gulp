@@ -6,7 +6,12 @@ body {
   padding: 0;
   color: var(--black);
   font-family: 'GraphikLCG';
+  text-transform: lowercase;
 }
+
+// vars
+$transition: all 0.3s cubic-bezier(0.34, 0.91, 0.53, 0.99);
+$transition-bounce: all 0.3s cubic-bezier(0.68, 1.92, 0.63, 0.65);
 
 :root {
   --black: #121212;
