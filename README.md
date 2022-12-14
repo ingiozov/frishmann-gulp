@@ -1,6 +1,6 @@
 Deployed here:
 
-Home Page:
+Home Page: (картинка бегает за курсором и переворачивается горизонтально и вертикально + картинка меняется, сетка 4х4)
 https://frishmann-gulp.vercel.app/
 
 Home Page with working circles! (Кликаем все елементы в секции 2 услуги):
